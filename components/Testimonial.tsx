@@ -40,7 +40,7 @@ const Testimonial = () => {
   ];
   return (
     <>
-      <section className="pb-10 pt-10 dark:bg-dark lg:pb-[50px] lg:pt-[50px]">
+      <section className="pb-10 pt-10 dark:bg-dark lg:pb-[50px] lg:pt-[50px] p-4">
         <div className="container mx-auto">
           <Swiper slidesPerView={1} ref={sliderRef}>
             {data.map((items, key) => (
