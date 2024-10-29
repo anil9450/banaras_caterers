@@ -117,7 +117,7 @@ export default function ImageSlider(): JSX.Element {
   };
 
   return (
-    <div className="relative w-full mx-auto mt-28">
+    <div className="relative w-full mx-auto mt-36 lg:mt-28">
       <div
         className="relative h-[460px] mx-12 group hover:-translate-y-2"
         onMouseOver={handleMouseOver}
