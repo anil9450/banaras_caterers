@@ -1,10 +1,17 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("/");
+  const pathname = usePathname();
+  const [activeLink, setActiveLink] = useState(pathname);
+  console.log(pathname);
+
+  useEffect(() => {
+    setActiveLink(pathname);
+  }, [pathname]);
 
   const navLinks = [
     { href: "/Home", label: "Home" },
